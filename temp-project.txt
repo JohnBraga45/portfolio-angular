@@ -1,0 +1,35 @@
+
+    // 🆕 Jogo Mata Mosquito
+    {
+      _id: 'jogo-mata-mosquito-2025',
+      title: 'Jogo Mata Mosquito',
+      slug: { current: 'jogo-mata-mosquito' },
+      description: 'Feito em JavaScript',
+      content: `
+        <h2>Sobre o Projeto</h2>
+        <p>Feito em JavaScript</p>
+        
+        <h3>Tecnologias Utilizadas</h3>
+        <p>Este projeto foi desenvolvido utilizando: JavaScript, HTML5, CSS3.</p>
+        
+        <h3>Funcionalidades</h3>
+        <ul>
+          <li>Funcionalidade 1</li>
+          <li>Funcionalidade 2</li>
+          <li>Funcionalidade 3</li>
+        </ul>
+        
+        <p><em>Edite este conteúdo em data.service.ts para adicionar mais detalhes.</em></p>
+      `,
+      image: {
+        asset: {
+          url: '/assets/projects/jogo-mata-mosquito.jpg'
+        }
+      },
+      gallery: [],
+      technologies: ['JavaScript', 'HTML5', 'CSS3'],
+      
+      
+      featured: true,
+      category: 'web'
+    },

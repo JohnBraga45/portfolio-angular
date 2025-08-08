@@ -1,0 +1,104 @@
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+        [class.bg-white]="isScrolled"
+        [class.shadow-lg]="isScrolled"
+        [class.bg-transparent]="!isScrolled">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a routerLink="/" class="text-2xl font-bold"
+           [class.text-gray-900]="isScrolled"
+           [class.text-white]="!isScrolled">
+          Portfolio
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          <button (click)="scrollToSection('home')"
+                  class="nav-link transition-colors duration-200"
+                  [class.text-gray-700]="isScrolled"
+                  [class.hover:text-primary-600]="isScrolled"
+                  [class.text-gray-300]="!isScrolled"
+                  [class.hover:text-white]="!isScrolled">
+            Início
+          </button>
+          <button (click)="scrollToSection('about')"
+                  class="nav-link transition-colors duration-200"
+                  [class.text-gray-700]="isScrolled"
+                  [class.hover:text-primary-600]="isScrolled"
+                  [class.text-gray-300]="!isScrolled"
+                  [class.hover:text-white]="!isScrolled">
+            Sobre
+          </button>
+          <button (click)="scrollToSection('projects')"
+                  class="nav-link transition-colors duration-200"
+                  [class.text-gray-700]="isScrolled"
+                  [class.hover:text-primary-600]="isScrolled"
+                  [class.text-gray-300]="!isScrolled"
+                  [class.hover:text-white]="!isScrolled">
+            Projetos
+          </button>
+          <button (click)="scrollToSection('skills')"
+                  class="nav-link transition-colors duration-200"
+                  [class.text-gray-700]="isScrolled"
+                  [class.hover:text-primary-600]="isScrolled"
+                  [class.text-gray-300]="!isScrolled"
+                  [class.hover:text-white]="!isScrolled">
+            Skills
+          </button>
+          <button (click)="scrollToSection('contact')"
+                  class="nav-link transition-colors duration-200"
+                  [class.text-gray-700]="isScrolled"
+                  [class.hover:text-primary-600]="isScrolled"
+                  [class.text-gray-300]="!isScrolled"
+                  [class.hover:text-white]="!isScrolled">
+            Contato
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button (click)="toggleMenu()"
+                class="inline-flex items-center justify-center p-2 rounded-md transition-colors duration-200"
+                [class.text-gray-700]="isScrolled"
+                [class.hover:text-primary-600]="isScrolled"
+                [class.text-gray-300]="!isScrolled"
+                [class.hover:text-white]="!isScrolled">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path *ngIf="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path *ngIf="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="md:hidden" [class.hidden]="!isMenuOpen">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg rounded-lg mt-2">
+        <button (click)="scrollToSection('home')"
+                class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
+          Início
+        </button>
+        <button (click)="scrollToSection('about')"
+                class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
+          Sobre
+        </button>
+        <button (click)="scrollToSection('projects')"
+                class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
+          Projetos
+        </button>
+        <button (click)="scrollToSection('skills')"
+                class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
+          Skills
+        </button>
+        <button (click)="scrollToSection('contact')"
+                class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
+          Contato
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>

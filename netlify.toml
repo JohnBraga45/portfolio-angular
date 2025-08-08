@@ -1,0 +1,134 @@
+# Configuração do Netlify para Portfolio Angular
+
+[build]
+  # Comando de build
+  command = "npm run build:prod"
+  
+  # Diretório de publicação
+  publish = "dist/portfolio-angular"
+  
+  # Variáveis de ambiente para build
+  environment = { NODE_VERSION = "18" }
+
+# Configurações de redirecionamento para SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers para otimização
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Cache para assets estáticos
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache para arquivos JS e CSS
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache para fontes
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache para imagens
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Configurações de formulário (para o formulário de contato)
+[forms]
+  # Ativar detecção automática de formulários
+  spam_protection = true
+
+# Configurações de função (se necessário no futuro)
+[functions]
+  directory = "netlify/functions"
+
+# Configurações de desenvolvimento local
+[dev]
+  command = "npm start"
+  port = 4200
+  targetPort = 4200
+  publish = "dist/portfolio-angular"
+  autoLaunch = false
+
+# Configurações de contexto para diferentes branches
+[context.production]
+  command = "npm run build:prod"
+  
+[context.deploy-preview]
+  command = "npm run build:prod"
+  
+[context.branch-deploy]
+  command = "npm run build:prod"
+
+# Configurações específicas para branch de desenvolvimento
+[context.develop]
+  command = "npm run build"
+
+# Plugins do Netlify
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  
+  [plugins.inputs]
+    output_path = "reports/lighthouse.html"
+    
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+  
+  [plugins.inputs]
+    baseUrl = "https://seu-portfolio.netlify.app"
+    sitemapPath = "/sitemap.xml"
+    providers = [
+      "google",
+      "bing"
+    ]
+
+# Configurações de edge functions (se necessário)
+[[edge_functions]]
+  function = "hello"
+  path = "/api/hello"
+
+# Configurações de split testing (A/B testing)
+# [split_testing]
+#   [[split_testing.branches]]
+#     branch = "main"
+#     weight = 50
+#   [[split_testing.branches]]
+#     branch = "feature-new-design"
+#     weight = 50

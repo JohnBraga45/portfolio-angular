@@ -1,0 +1,16 @@
+<!-- Header -->
+<app-header></app-header>
+
+<!-- Main Content -->
+<main>
+  <router-outlet></router-outlet>
+  
+  <!-- Home Page Sections (only show when not on project detail page) -->
+  <div *ngIf="!isProjectDetailPage()">
+    <app-hero></app-hero>
+    <app-about></app-about>
+    <app-projects></app-projects>
+    <app-skills></app-skills>
+    <app-contact></app-contact>
+  </div>
+</main>
