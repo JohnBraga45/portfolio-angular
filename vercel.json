@@ -1,5 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
       "source": "/(.*)",
@@ -17,7 +16,7 @@
       ]
     },
     {
-      "source": "/(.*\.(js|css))",
+      "source": "/(.*\\.(js|css))",
       "headers": [
         {
           "key": "Cache-Control",
@@ -25,8 +24,5 @@
         }
       ]
     }
-  ],
-  "buildCommand": "ng build --configuration production",
-  "outputDirectory": "dist/portfolio-angular",
-  "framework": "angular"
+  ]
 }
