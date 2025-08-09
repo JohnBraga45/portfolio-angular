@@ -81,8 +81,8 @@ export class DataService {
         },
         gallery: [],
         technologies: ['Angular', 'TypeScript', 'CoinGecko API', 'Chart.js', 'Tailwind CSS', 'RxJS'],
-        liveUrl: '/crypto-dashboard',
-        githubUrl: 'https://github.com/JohnBraga45/portfolio-angular/tree/feature/test-preview',
+        liveUrl: 'https://crypto-dashboard-chi-six.vercel.app/',
+        githubUrl: 'https://github.com/JohnBraga45/crypto-dashboard',
         featured: true,
         category: 'web'
       },
