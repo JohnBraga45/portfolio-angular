@@ -72,35 +72,11 @@ export class DataService {
         _id: 'crypto-dashboard-2025',
         title: 'Dashboard de Criptomoedas',
         slug: { current: 'crypto-dashboard' },
-        description: 'Dashboard completo com preços em tempo real, gráficos de tendências e portfolio tracker',
-        content: `
-          <h2>Sobre o Projeto</h2>
-          <p>Dashboard completo de criptomoedas desenvolvido com Angular, oferecendo uma experiência moderna e intuitiva para acompanhar o mercado crypto.</p>
-          
-          <h3>Funcionalidades Principais</h3>
-          <ul>
-            <li>📊 <strong>Preços em Tempo Real</strong> - Cotações atualizadas via CoinGecko API</li>
-            <li>📈 <strong>Gráficos de Tendências</strong> - Visualização interativa com Chart.js</li>
-            <li>💼 <strong>Portfolio Tracker</strong> - Acompanhe seus investimentos</li>
-            <li>🔔 <strong>Alertas de Preço</strong> - Notificações personalizadas</li>
-            <li>🌙 <strong>Modo Escuro/Claro</strong> - Interface adaptável</li>
-            <li>📱 <strong>Design Responsivo</strong> - Funciona em todos os dispositivos</li>
-          </ul>
-          
-          <h3>Tecnologias Utilizadas</h3>
-          <p>Desenvolvido com Angular 17, TypeScript e Tailwind CSS. Integração com CoinGecko API para dados em tempo real e Chart.js para visualizações interativas.</p>
-          
-          <h3>Destaques Técnicos</h3>
-          <ul>
-            <li>Arquitetura modular e escalável</li>
-            <li>Gerenciamento de estado reativo com RxJS</li>
-            <li>Otimização de performance com lazy loading</li>
-            <li>Testes unitários e de integração</li>
-          </ul>
-        `,
+        description: 'Dashboard completo de criptomoedas com preços em tempo real, gráficos interativos, portfolio tracker e alertas personalizados. Desenvolvido com Angular 17, TypeScript e Tailwind CSS.',
+        content: 'Dashboard moderno e intuitivo para acompanhar o mercado de criptomoedas. Oferece preços em tempo real via CoinGecko API, gráficos de tendências com Chart.js, gerenciamento de portfólio, alertas de preço personalizados e design responsivo. Arquitetura escalável com Angular 17, TypeScript e Tailwind CSS.',
         image: {
           asset: {
-            url: '/assets/projects/crypto-dashboard.jpg'
+            url: '/assets/projects/crypto-dashboard.svg'
           }
         },
         gallery: [],
