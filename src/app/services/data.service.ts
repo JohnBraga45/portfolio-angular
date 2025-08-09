@@ -105,6 +105,8 @@ export class DataService {
         },
         gallery: [],
         technologies: ['Angular', 'TypeScript', 'CoinGecko API', 'Chart.js', 'Tailwind CSS', 'RxJS'],
+        liveUrl: '/crypto-dashboard',
+        githubUrl: 'https://github.com/JohnBraga45/portfolio-angular/tree/feature/test-preview',
         featured: true,
         category: 'web'
       },
