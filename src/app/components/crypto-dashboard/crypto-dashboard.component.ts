@@ -438,6 +438,8 @@ export class CryptoDashboardComponent implements OnInit, OnDestroy {
   }
   
   private createPriceChart(data: any) {
+    if (typeof document === 'undefined') return;
+    
     const canvas = document.querySelector('#priceChart') as HTMLCanvasElement;
     if (!canvas) return;
     
@@ -502,6 +504,8 @@ export class CryptoDashboardComponent implements OnInit, OnDestroy {
   
   private createSparklines() {
     setTimeout(() => {
+      if (typeof document === 'undefined') return;
+      
       this.allCryptos.forEach(crypto => {
         if (crypto.sparkline_in_7d?.price) {
           const canvas = document.getElementById(`sparkline-${crypto.id}`) as HTMLCanvasElement;

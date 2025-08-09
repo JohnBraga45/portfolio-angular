@@ -136,9 +136,11 @@ export class ContactComponent implements OnInit {
         this.resetForm();
         
         // Scroll para o topo da seção de contato para mostrar a mensagem de sucesso
-        const contactSection = document.getElementById('contact');
-        if (contactSection) {
-          contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (typeof document !== 'undefined') {
+          const contactSection = document.getElementById('contact');
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
         }
         
         setTimeout(() => this.showSuccessMessage = false, 7000);
