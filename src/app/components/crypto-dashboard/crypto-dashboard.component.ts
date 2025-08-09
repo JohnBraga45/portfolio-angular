@@ -421,14 +421,18 @@ export class CryptoDashboardComponent implements OnInit, OnDestroy {
   
   private loadAlerts() {
     // Carregar alertas salvos do localStorage
-    const savedAlerts = localStorage.getItem('cryptoAlerts');
-    if (savedAlerts) {
-      this.alerts = JSON.parse(savedAlerts);
+    if (typeof localStorage !== 'undefined') {
+      const savedAlerts = localStorage.getItem('cryptoAlerts');
+      if (savedAlerts) {
+        this.alerts = JSON.parse(savedAlerts);
+      }
     }
   }
   
   private saveAlerts() {
-    localStorage.setItem('cryptoAlerts', JSON.stringify(this.alerts));
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('cryptoAlerts', JSON.stringify(this.alerts));
+    }
   }
   
   updateChart() {
