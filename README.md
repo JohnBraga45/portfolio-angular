@@ -2,6 +2,8 @@
 
 Um portfólio moderno e responsivo desenvolvido com Angular 17, TailwindCSS e TypeScript.
 
+> 🎉 **Deploy realizado com sucesso na Vercel!** Preview automático ativo.
+
 ## ✨ Características
 
 - 📱 **Responsivo**: Design adaptável para todos os dispositivos
