@@ -67,6 +67,49 @@ export class DataService {
   getProjects(): Observable<Project[]> {
     // Projetos baseados na experiência do Dionísio Braga
     const mockProjects: Project[] = [
+      // 🆕 Dashboard de Criptomoedas
+      {
+        _id: 'crypto-dashboard-2025',
+        title: 'Dashboard de Criptomoedas',
+        slug: { current: 'crypto-dashboard' },
+        description: 'Dashboard completo com preços em tempo real, gráficos de tendências e portfolio tracker',
+        content: `
+          <h2>Sobre o Projeto</h2>
+          <p>Dashboard completo de criptomoedas desenvolvido com Angular, oferecendo uma experiência moderna e intuitiva para acompanhar o mercado crypto.</p>
+          
+          <h3>Funcionalidades Principais</h3>
+          <ul>
+            <li>📊 <strong>Preços em Tempo Real</strong> - Cotações atualizadas via CoinGecko API</li>
+            <li>📈 <strong>Gráficos de Tendências</strong> - Visualização interativa com Chart.js</li>
+            <li>💼 <strong>Portfolio Tracker</strong> - Acompanhe seus investimentos</li>
+            <li>🔔 <strong>Alertas de Preço</strong> - Notificações personalizadas</li>
+            <li>🌙 <strong>Modo Escuro/Claro</strong> - Interface adaptável</li>
+            <li>📱 <strong>Design Responsivo</strong> - Funciona em todos os dispositivos</li>
+          </ul>
+          
+          <h3>Tecnologias Utilizadas</h3>
+          <p>Desenvolvido com Angular 17, TypeScript e Tailwind CSS. Integração com CoinGecko API para dados em tempo real e Chart.js para visualizações interativas.</p>
+          
+          <h3>Destaques Técnicos</h3>
+          <ul>
+            <li>Arquitetura modular e escalável</li>
+            <li>Gerenciamento de estado reativo com RxJS</li>
+            <li>Otimização de performance com lazy loading</li>
+            <li>Testes unitários e de integração</li>
+          </ul>
+        `,
+        image: {
+          asset: {
+            url: '/assets/projects/crypto-dashboard.jpg'
+          }
+        },
+        gallery: [],
+        technologies: ['Angular', 'TypeScript', 'CoinGecko API', 'Chart.js', 'Tailwind CSS', 'RxJS'],
+        liveUrl: '/crypto-dashboard',
+        githubUrl: 'https://github.com/JohnBraga45/portfolio-angular/tree/feature/test-preview',
+        featured: true,
+        category: 'web'
+      },
       {
          _id: 'project1',
          title: 'Sistema PNA - Interface Administrativa',
