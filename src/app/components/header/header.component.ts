@@ -15,7 +15,9 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.pageYOffset > 50;
+    if (typeof window !== 'undefined') {
+      this.isScrolled = window.pageYOffset > 50;
+    }
   }
 
   toggleMenu() {
