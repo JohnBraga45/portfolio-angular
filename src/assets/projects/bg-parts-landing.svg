@@ -1,0 +1,60 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1e293b"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="60" fill="#0f172a"/>
+  
+  <!-- Logo Area -->
+  <circle cx="50" cy="30" r="15" fill="#3b82f6"/>
+  <text x="75" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">BG PARTS</text>
+  
+  <!-- Navigation -->
+  <text x="250" y="25" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Home</text>
+  <text x="290" y="25" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Serviços</text>
+  <text x="340" y="25" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Contato</text>
+  
+  <text x="250" y="45" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Sobre</text>
+  <text x="290" y="45" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Produtos</text>
+  
+  <!-- Hero Section -->
+  <rect x="20" y="80" width="360" height="120" fill="#334155" rx="8"/>
+  
+  <!-- Car Icon -->
+  <rect x="40" y="100" width="60" height="30" fill="#3b82f6" rx="4"/>
+  <circle cx="50" cy="140" r="8" fill="#1e293b"/>
+  <circle cx="90" cy="140" r="8" fill="#1e293b"/>
+  <rect x="45" y="105" width="50" height="20" fill="#1e293b" rx="2"/>
+  
+  <!-- Hero Text -->
+  <text x="120" y="115" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Peças Automóveis</text>
+  <text x="120" y="135" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Originais para Angola</text>
+  
+  <text x="120" y="155" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Importação especializada de peças</text>
+  <text x="120" y="170" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">usadas originais com qualidade</text>
+  
+  <!-- CTA Button -->
+  <rect x="120" y="180" width="100" height="30" fill="#3b82f6" rx="4"/>
+  <text x="155" y="200" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Saiba Mais</text>
+  
+  <!-- Services Section -->
+  <text x="20" y="235" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Nossos Serviços</text>
+  
+  <!-- Service Cards -->
+  <rect x="20" y="245" width="110" height="40" fill="#475569" rx="4"/>
+  <text x="30" y="260" font-family="Arial, sans-serif" font-size="10" fill="white">🔧 Importação</text>
+  <text x="30" y="275" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Peças Originais</text>
+  
+  <rect x="145" y="245" width="110" height="40" fill="#475569" rx="4"/>
+  <text x="155" y="260" font-family="Arial, sans-serif" font-size="10" fill="white">✅ Qualidade</text>
+  <text x="155" y="275" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Garantida</text>
+  
+  <rect x="270" y="245" width="110" height="40" fill="#475569" rx="4"/>
+  <text x="280" y="260" font-family="Arial, sans-serif" font-size="10" fill="white">🚚 Entrega</text>
+  <text x="280" y="275" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Rápida</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="350" cy="100" r="3" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="360" cy="120" r="2" fill="#3b82f6" opacity="0.3"/>
+  <circle cx="340" cy="130" r="2" fill="#3b82f6" opacity="0.4"/>
+</svg>

@@ -67,6 +67,40 @@ export class DataService {
   getProjects(): Observable<Project[]> {
     // Projetos baseados na experiência do Dionísio Braga
     const mockProjects: Project[] = [
+      // 🆕 Landing Page BG Parts
+      {
+        _id: 'landing-page-bg-parts-2025',
+        title: 'Landing Page - BG Parts',
+        slug: { current: 'landing-page-bg-parts' },
+        description: 'Landing page profissional para BG Parts - empresa especializada na importação de peças automóveis usadas originais para Angola.',
+        content: `
+          <h2>Sobre o Projeto</h2>
+          <p>Landing page moderna e responsiva desenvolvida para a BG Parts, empresa especializada na importação de peças automóveis usadas originais para Angola.</p>
+          
+          <h3>Funcionalidades</h3>
+          <ul>
+            <li>🚗 Apresentação dos serviços da empresa</li>
+            <li>📱 Design totalmente responsivo</li>
+            <li>📧 Formulário de contato integrado via EmailJS</li>
+            <li>⚡ Performance otimizada</li>
+            <li>🎨 Interface moderna e profissional</li>
+          </ul>
+          
+          <h3>Tecnologias Utilizadas</h3>
+          <p>Desenvolvida com HTML5, CSS3, JavaScript vanilla e integração EmailJS para formulário de contato funcional.</p>
+        `,
+        image: {
+           asset: {
+             url: '/assets/projects/bg-parts-landing.svg'
+           }
+         },
+        gallery: [],
+        technologies: ['HTML5', 'CSS3', 'JavaScript', 'EmailJS', 'Responsive Design'],
+        liveUrl: 'https://johnbraga45.github.io/landingPage_BGparts/',
+        githubUrl: 'https://github.com/JohnBraga45/landingPage_BGparts',
+        featured: true,
+        category: 'web'
+      },
       // 🆕 Dashboard de Criptomoedas
       {
         _id: 'crypto-dashboard-2025',
