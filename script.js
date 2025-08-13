@@ -1,4 +1,3 @@
-// Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -7,7 +6,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
+
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -15,7 +14,7 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
-// Smooth scrolling for navigation links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -32,7 +31,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Header scroll effect
+
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (window.scrollY > 100) {
@@ -44,7 +43,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Intersection Observer for animations
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -58,31 +57,30 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Add fade-in class to elements and observe them
+
 const animateElements = document.querySelectorAll('.about-content, .brand-card, .category-card, .contact-content');
 animateElements.forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
 
-// Configuração do EmailJS
-// IMPORTANTE: Substitua estas configurações pelas suas próprias do painel EmailJS
+
 const EMAILJS_CONFIG = {
-    publicKey: 'YOUR_PUBLIC_KEY', // Substitua pela sua Public Key do EmailJS
-    serviceId: 'YOUR_SERVICE_ID', // Substitua pelo seu Service ID
-    templateId: 'YOUR_TEMPLATE_ID' // Substitua pelo seu Template ID
+    publicKey: 'YOUR_PUBLIC_KEY',
+    serviceId: 'YOUR_SERVICE_ID',
+    templateId: 'YOUR_TEMPLATE_ID'
 };
 
-// Contact form handling with EmailJS integration
+
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const formMessage = document.getElementById('formMessage');
 const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
 const btnLoading = submitBtn ? submitBtn.querySelector('.btn-loading') : null;
 
-// Inicializar EmailJS quando o DOM estiver carregado
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Inicializar EmailJS com a Public Key
+
     if (typeof emailjs !== 'undefined') {
         emailjs.init(EMAILJS_CONFIG.publicKey);
     }
@@ -92,7 +90,7 @@ if (contactForm) {
     contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        // Get form data
+
         const formData = new FormData(contactForm);
         const data = {
             nome: formData.get('nome'),
@@ -102,39 +100,39 @@ if (contactForm) {
             mensagem: formData.get('mensagem')
         };
         
-        // Validate form
+
         if (!validateForm(data)) {
             showMessage('Por favor, preencha todos os campos obrigatórios.', 'error');
             return;
         }
         
-        // Validação de email
+
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(data.email)) {
             showMessage('Por favor, insira um email válido.', 'error');
             return;
         }
         
-        // Disable form and show loading
+
         setLoadingState(true);
         
         try {
-            // Verificar se EmailJS está disponível
+
             if (typeof emailjs === 'undefined') {
                 throw new Error('EmailJS não está carregado');
             }
             
-            // Preparar dados para o EmailJS
+
             const templateParams = {
                 from_name: data.nome,
                 from_email: data.email,
                 phone: data.telefone,
                 car_brand: data.marca,
                 message: data.mensagem,
-                to_email: 'info@bg-autoparts.ao' // Email de destino
+                to_email: 'info@bg-autoparts.ao'
             };
             
-            // Enviar email usando EmailJS
+
             const response = await emailjs.send(
                 EMAILJS_CONFIG.serviceId,
                 EMAILJS_CONFIG.templateId,
@@ -148,7 +146,7 @@ if (contactForm) {
         } catch (error) {
             console.error('Erro ao enviar email:', error);
             
-            // Verificar se é erro de configuração
+
             if (error.text && error.text.includes('Public Key')) {
                 showMessage('Erro de configuração. Verifique as credenciais do EmailJS.', 'error');
             } else if (error.message && error.message.includes('EmailJS não está carregado')) {
@@ -172,7 +170,7 @@ function showMessage(message, type) {
         formMessage.className = `form-message ${type}`;
         formMessage.style.display = 'block';
         
-        // Hide message after 5 seconds
+
         setTimeout(() => {
             formMessage.style.display = 'none';
         }, 5000);
@@ -195,11 +193,11 @@ function setLoadingState(loading) {
     }
 }
 
-// Add loading animation to CTA button
+
 const ctaButton = document.querySelector('.cta-button');
 if (ctaButton) {
     ctaButton.addEventListener('click', function() {
-        // Scroll to contact section
+
         const contactSection = document.querySelector('#contact');
         if (contactSection) {
             const headerHeight = document.querySelector('.header').offsetHeight;
@@ -213,7 +211,7 @@ if (ctaButton) {
     });
 }
 
-// Add hover effects to cards
+
 const cards = document.querySelectorAll('.brand-card, .category-card');
 cards.forEach(card => {
     card.addEventListener('mouseenter', function() {
@@ -225,7 +223,7 @@ cards.forEach(card => {
     });
 });
 
-// Add typing effect to hero title
+
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
@@ -241,7 +239,7 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Initialize typing effect when page loads
+
 window.addEventListener('load', () => {
     const heroTitle = document.querySelector('.hero-content h1');
     if (heroTitle) {
@@ -250,7 +248,7 @@ window.addEventListener('load', () => {
     }
 });
 
-// Add parallax effect to hero section
+
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
@@ -260,7 +258,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add counter animation for stats
+
 function animateCounter(element, target, duration = 2000) {
     let start = 0;
     const increment = target / (duration / 16);
@@ -278,7 +276,7 @@ function animateCounter(element, target, duration = 2000) {
     updateCounter();
 }
 
-// Initialize counter animations when stats come into view
+
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -301,15 +299,15 @@ if (heroStats) {
     statsObserver.observe(heroStats);
 }
 
-// Add search functionality (placeholder)
+
 function searchParts(query) {
-    // This would typically connect to a backend API
+
     console.log('Searching for:', query);
-    // For now, just show an alert
+
     alert(`Procurando por: ${query}`);
 }
 
-// Add mobile menu styles
+
 const style = document.createElement('style');
 style.textContent = `
     @media (max-width: 768px) {
@@ -349,12 +347,12 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Add loading state for page
+
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
-// Add scroll to top functionality
+
 const scrollToTop = document.createElement('button');
 scrollToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
 scrollToTop.className = 'scroll-to-top';
@@ -385,7 +383,7 @@ scrollToTop.addEventListener('click', () => {
 
 document.body.appendChild(scrollToTop);
 
-// Show/hide scroll to top button
+
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 300) {
         scrollToTop.style.opacity = '1';
@@ -396,7 +394,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add hover effect to scroll to top button
+
 scrollToTop.addEventListener('mouseenter', () => {
     scrollToTop.style.transform = 'scale(1.1)';
 });
