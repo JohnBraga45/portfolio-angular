@@ -1,0 +1,106 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#ffffff"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="50" fill="#1f2937"/>
+  <text x="20" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">ShopNow</text>
+  <text x="20" y="35" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">E-commerce Platform</text>
+  
+  <!-- Search Bar -->
+  <rect x="120" y="15" width="160" height="20" rx="10" fill="white" stroke="#d1d5db"/>
+  <text x="130" y="27" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">🔍 Search products...</text>
+  
+  <!-- Cart Icon -->
+  <rect x="320" y="15" width="60" height="20" rx="10" fill="#f59e0b"/>
+  <text x="350" y="27" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">🛒 Cart (3)</text>
+  
+  <!-- Navigation -->
+  <rect x="0" y="50" width="400" height="30" fill="#f3f4f6"/>
+  <text x="20" y="67" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937">Categories:</text>
+  <text x="80" y="67" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Electronics</text>
+  <text x="140" y="67" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Clothing</text>
+  <text x="190" y="67" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Books</text>
+  <text x="230" y="67" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Home</text>
+  <text x="270" y="67" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Sports</text>
+  
+  <!-- Main Content -->
+  <!-- Featured Banner -->
+  <rect x="20" y="90" width="360" height="60" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="30" y="110" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">🎉 Summer Sale!</text>
+  <text x="30" y="125" font-family="Arial, sans-serif" font-size="8" fill="#1e40af">Up to 50% off on selected items</text>
+  <rect x="300" y="105" width="60" height="20" rx="10" fill="#3b82f6"/>
+  <text x="330" y="117" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Shop Now</text>
+  
+  <!-- Product Grid -->
+  <!-- Product 1 -->
+  <rect x="20" y="165" width="85" height="100" rx="6" fill="white" stroke="#e5e7eb"/>
+  <rect x="25" y="170" width="75" height="50" rx="4" fill="#f3f4f6"/>
+  <text x="62" y="200" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📱</text>
+  <text x="25" y="235" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937">Smartphone Pro</text>
+  <text x="25" y="245" font-family="Arial, sans-serif" font-size="8" fill="#f59e0b" font-weight="bold">$699</text>
+  <text x="25" y="255" font-family="Arial, sans-serif" font-size="6" fill="#6b7280">⭐⭐⭐⭐⭐ (4.8)</text>
+  
+  <!-- Product 2 -->
+  <rect x="115" y="165" width="85" height="100" rx="6" fill="white" stroke="#e5e7eb"/>
+  <rect x="120" y="170" width="75" height="50" rx="4" fill="#f3f4f6"/>
+  <text x="157" y="200" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">👕</text>
+  <text x="120" y="235" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937">Cotton T-Shirt</text>
+  <text x="120" y="245" font-family="Arial, sans-serif" font-size="8" fill="#f59e0b" font-weight="bold">$29</text>
+  <text x="120" y="255" font-family="Arial, sans-serif" font-size="6" fill="#6b7280">⭐⭐⭐⭐☆ (4.2)</text>
+  
+  <!-- Product 3 -->
+  <rect x="210" y="165" width="85" height="100" rx="6" fill="white" stroke="#e5e7eb"/>
+  <rect x="215" y="170" width="75" height="50" rx="4" fill="#f3f4f6"/>
+  <text x="252" y="200" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📚</text>
+  <text x="215" y="235" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937">Programming Book</text>
+  <text x="215" y="245" font-family="Arial, sans-serif" font-size="8" fill="#f59e0b" font-weight="bold">$45</text>
+  <text x="215" y="255" font-family="Arial, sans-serif" font-size="6" fill="#6b7280">⭐⭐⭐⭐⭐ (4.9)</text>
+  
+  <!-- Product 4 -->
+  <rect x="305" y="165" width="75" height="100" rx="6" fill="white" stroke="#e5e7eb"/>
+  <rect x="310" y="170" width="65" height="50" rx="4" fill="#f3f4f6"/>
+  <text x="342" y="200" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">⌚</text>
+  <text x="310" y="235" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937">Smart Watch</text>
+  <text x="310" y="245" font-family="Arial, sans-serif" font-size="8" fill="#f59e0b" font-weight="bold">$299</text>
+  <text x="310" y="255" font-family="Arial, sans-serif" font-size="6" fill="#6b7280">⭐⭐⭐⭐☆ (4.5)</text>
+  
+  <!-- Add to Cart Buttons -->
+  <rect x="60" y="270" width="30" height="15" rx="3" fill="#10b981"/>
+  <text x="75" y="280" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">Add</text>
+  
+  <rect x="155" y="270" width="30" height="15" rx="3" fill="#10b981"/>
+  <text x="170" y="280" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">Add</text>
+  
+  <rect x="250" y="270" width="30" height="15" rx="3" fill="#10b981"/>
+  <text x="265" y="280" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">Add</text>
+  
+  <rect x="335" y="270" width="30" height="15" rx="3" fill="#10b981"/>
+  <text x="350" y="280" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">Add</text>
+  
+  <!-- Sale Badge -->
+  <rect x="25" y="170" width="20" height="12" rx="2" fill="#ef4444"/>
+  <text x="35" y="178" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">-20%</text>
+  
+  <!-- New Badge -->
+  <rect x="270" y="170" width="20" height="12" rx="2" fill="#10b981"/>
+  <text x="280" y="178" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">NEW</text>
+  
+  <!-- Sidebar Filters -->
+  <rect x="20" y="90" width="0" height="0" fill="transparent"/>
+  
+  <!-- Quick Stats -->
+  <circle cx="370" cy="25" r="4" fill="#10b981"/>
+  <text x="375" y="28" font-family="Arial, sans-serif" font-size="6" fill="#10b981">Online</text>
+  
+  <!-- Price Range Indicator -->
+  <text x="20" y="160" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937">Featured Products</text>
+  
+  <!-- Footer Info -->
+  <rect x="0" y="290" width="400" height="10" fill="#f9fafb"/>
+  <text x="20" y="298" font-family="Arial, sans-serif" font-size="6" fill="#6b7280">Free shipping on orders over $50 | 30-day return policy</text>
+  
+  <!-- Angular Logo Indicator -->
+  <circle cx="90" cy="25" r="6" fill="#dd0031"/>
+  <text x="87" y="29" font-family="Arial, sans-serif" font-size="8" fill="white">A</text>
+</svg>

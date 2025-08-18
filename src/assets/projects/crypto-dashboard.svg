@@ -1,180 +1,84 @@
-<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#1e1b4b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#374151;stop-opacity:0.6" />
-    </linearGradient>
-    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.4" />
-    </linearGradient>
-    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  <rect width="400" height="300" fill="#0f172a"/>
   
   <!-- Header -->
-  <rect x="0" y="0" width="800" height="80" fill="#1f2937" fill-opacity="0.5"/>
+  <rect x="0" y="0" width="400" height="50" fill="#1e293b"/>
+  <text x="20" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">CryptoDash</text>
+  <text x="320" y="30" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Real-time</text>
   
-  <!-- Logo/Icon -->
-  <circle cx="60" cy="40" r="20" fill="url(#iconGradient)"/>
-  <text x="60" y="48" text-anchor="middle" fill="white" font-size="16" font-weight="bold">₿</text>
+  <!-- Navigation -->
+  <rect x="20" y="65" width="50" height="6" rx="3" fill="#f59e0b"/>
+  <rect x="80" y="65" width="60" height="6" rx="3" fill="#374151"/>
+  <rect x="150" y="65" width="55" height="6" rx="3" fill="#374151"/>
+  <rect x="215" y="65" width="45" height="6" rx="3" fill="#374151"/>
   
-  <!-- Title -->
-  <text x="100" y="35" fill="#60a5fa" font-size="24" font-weight="bold">Crypto Dashboard</text>
-  <text x="100" y="55" fill="#9ca3af" font-size="14">Monitore preços em tempo real</text>
+  <!-- Main Dashboard Grid -->
+  <!-- Price Cards -->
+  <rect x="20" y="85" width="90" height="50" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="25" y="100" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Bitcoin</text>
+  <text x="25" y="115" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">$43,250</text>
+  <text x="25" y="125" font-family="Arial, sans-serif" font-size="8" fill="#10b981">+2.5%</text>
   
-  <!-- Stats Cards -->
-  <g transform="translate(40, 100)">
-    <!-- Card 1 - Bitcoin -->
-    <rect x="0" y="0" width="160" height="100" rx="12" fill="url(#cardGradient)" stroke="#374151" stroke-width="1"/>
-    <circle cx="30" cy="30" r="12" fill="#f59e0b"/>
-    <text x="30" y="36" text-anchor="middle" fill="white" font-size="12" font-weight="bold">₿</text>
-    <text x="50" y="25" fill="white" font-size="14" font-weight="bold">Bitcoin</text>
-    <text x="50" y="40" fill="#9ca3af" font-size="12">BTC</text>
-    <text x="20" y="65" fill="#10b981" font-size="18" font-weight="bold">$43,250</text>
-    <text x="20" y="85" fill="#10b981" font-size="12">+2.5%</text>
-    
-    <!-- Card 2 - Ethereum -->
-    <rect x="180" y="0" width="160" height="100" rx="12" fill="url(#cardGradient)" stroke="#374151" stroke-width="1"/>
-    <circle cx="210" cy="30" r="12" fill="#627eea"/>
-    <text x="210" y="36" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Ξ</text>
-    <text x="230" y="25" fill="white" font-size="14" font-weight="bold">Ethereum</text>
-    <text x="230" y="40" fill="#9ca3af" font-size="12">ETH</text>
-    <text x="200" y="65" fill="#10b981" font-size="18" font-weight="bold">$2,650</text>
-    <text x="200" y="85" fill="#10b981" font-size="12">+1.8%</text>
-    
-    <!-- Card 3 - Portfolio -->
-    <rect x="360" y="0" width="160" height="100" rx="12" fill="url(#cardGradient)" stroke="#374151" stroke-width="1"/>
-    <circle cx="390" cy="30" r="12" fill="#8b5cf6"/>
-    <text x="390" y="36" text-anchor="middle" fill="white" font-size="12" font-weight="bold">💼</text>
-    <text x="410" y="25" fill="white" font-size="14" font-weight="bold">Portfolio</text>
-    <text x="410" y="40" fill="#9ca3af" font-size="12">Total</text>
-    <text x="380" y="65" fill="#10b981" font-size="18" font-weight="bold">$28,475</text>
-    <text x="380" y="85" fill="#10b981" font-size="12">+5.2%</text>
-    
-    <!-- Card 4 - Alerts -->
-    <rect x="540" y="0" width="160" height="100" rx="12" fill="url(#cardGradient)" stroke="#374151" stroke-width="1"/>
-    <circle cx="570" cy="30" r="12" fill="#ef4444"/>
-    <text x="570" y="36" text-anchor="middle" fill="white" font-size="12" font-weight="bold">🔔</text>
-    <text x="590" y="25" fill="white" font-size="14" font-weight="bold">Alertas</text>
-    <text x="590" y="40" fill="#9ca3af" font-size="12">Ativos</text>
-    <text x="580" y="65" fill="white" font-size="18" font-weight="bold">3</text>
-    <text x="580" y="85" fill="#9ca3af" font-size="12">Configurados</text>
-  </g>
+  <rect x="120" y="85" width="90" height="50" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="125" y="100" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Ethereum</text>
+  <text x="125" y="115" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">$2,680</text>
+  <text x="125" y="125" font-family="Arial, sans-serif" font-size="8" fill="#ef4444">-1.2%</text>
   
-  <!-- Main Chart Area -->
-  <g transform="translate(40, 220)">
-    <rect x="0" y="0" width="480" height="300" rx="12" fill="url(#cardGradient)" stroke="#374151" stroke-width="1"/>
-    
-    <!-- Chart Header -->
-    <text x="20" y="30" fill="white" font-size="16" font-weight="bold">📈 Gráfico de Preços - Bitcoin</text>
-    
-    <!-- Chart Area -->
-    <rect x="20" y="50" width="440" height="220" rx="8" fill="#111827" fill-opacity="0.5"/>
-    
-    <!-- Chart Line -->
-    <path d="M 40 200 Q 120 180 200 160 T 360 140 T 440 120" 
-          stroke="url(#chartGradient)" 
-          stroke-width="3" 
-          fill="none"/>
-    
-    <!-- Chart Fill -->
-    <path d="M 40 200 Q 120 180 200 160 T 360 140 T 440 120 L 440 250 L 40 250 Z" 
-          fill="url(#chartGradient)" 
-          fill-opacity="0.3"/>
-    
-    <!-- Chart Points -->
-    <circle cx="40" cy="200" r="4" fill="#10b981"/>
-    <circle cx="120" cy="180" r="4" fill="#10b981"/>
-    <circle cx="200" cy="160" r="4" fill="#10b981"/>
-    <circle cx="280" cy="140" r="4" fill="#10b981"/>
-    <circle cx="360" cy="140" r="4" fill="#10b981"/>
-    <circle cx="440" cy="120" r="4" fill="#10b981"/>
-    
-    <!-- Grid Lines -->
-    <g stroke="#374151" stroke-width="1" opacity="0.3">
-      <line x1="40" y1="70" x2="440" y2="70"/>
-      <line x1="40" y1="120" x2="440" y2="120"/>
-      <line x1="40" y1="170" x2="440" y2="170"/>
-      <line x1="40" y1="220" x2="440" y2="220"/>
-    </g>
-    
-    <!-- Y-axis labels -->
-    <text x="30" y="75" fill="#9ca3af" font-size="10" text-anchor="end">$45k</text>
-    <text x="30" y="125" fill="#9ca3af" font-size="10" text-anchor="end">$44k</text>
-    <text x="30" y="175" fill="#9ca3af" font-size="10" text-anchor="end">$43k</text>
-    <text x="30" y="225" fill="#9ca3af" font-size="10" text-anchor="end">$42k</text>
-  </g>
+  <rect x="220" y="85" width="90" height="50" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="225" y="100" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Cardano</text>
+  <text x="225" y="115" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">$0.52</text>
+  <text x="225" y="125" font-family="Arial, sans-serif" font-size="8" fill="#10b981">+5.8%</text>
   
-  <!-- Sidebar -->
-  <g transform="translate(540, 220)">
-    <!-- Portfolio Section -->
-    <rect x="0" y="0" width="220" height="140" rx="12" fill="url(#cardGradient)" stroke="#374151" stroke-width="1"/>
-    <text x="15" y="25" fill="white" font-size="14" font-weight="bold">💼 Meu Portfólio</text>
-    
-    <!-- Portfolio Items -->
-    <g transform="translate(15, 40)">
-      <circle cx="12" cy="12" r="8" fill="#f59e0b"/>
-      <text x="12" y="16" text-anchor="middle" fill="white" font-size="8">₿</text>
-      <text x="30" y="12" fill="white" font-size="12">BTC</text>
-      <text x="30" y="24" fill="#9ca3af" font-size="10">0.5 BTC</text>
-      <text x="160" y="12" fill="#10b981" font-size="12" text-anchor="end">$21,625</text>
-      <text x="160" y="24" fill="#10b981" font-size="10" text-anchor="end">+2.5%</text>
-      
-      <circle cx="12" cy="42" r="8" fill="#627eea"/>
-      <text x="12" y="46" text-anchor="middle" fill="white" font-size="8">Ξ</text>
-      <text x="30" y="42" fill="white" font-size="12">ETH</text>
-      <text x="30" y="54" fill="#9ca3af" font-size="10">2.5 ETH</text>
-      <text x="160" y="42" fill="#10b981" font-size="12" text-anchor="end">$6,625</text>
-      <text x="160" y="54" fill="#10b981" font-size="10" text-anchor="end">+1.8%</text>
-      
-      <circle cx="12" cy="72" r="8" fill="#0ea5e9"/>
-      <text x="12" y="76" text-anchor="middle" fill="white" font-size="8">A</text>
-      <text x="30" y="72" fill="white" font-size="12">ADA</text>
-      <text x="30" y="84" fill="#9ca3af" font-size="10">1000 ADA</text>
-      <text x="160" y="72" fill="#ef4444" font-size="12" text-anchor="end">$485</text>
-      <text x="160" y="84" fill="#ef4444" font-size="10" text-anchor="end">-3.0%</text>
-    </g>
-    
-    <!-- Alerts Section -->
-    <rect x="0" y="160" width="220" height="120" rx="12" fill="url(#cardGradient)" stroke="#374151" stroke-width="1"/>
-    <text x="15" y="185" fill="white" font-size="14" font-weight="bold">🔔 Alertas de Preço</text>
-    
-    <!-- Alert Items -->
-    <g transform="translate(15, 200)">
-      <circle cx="8" cy="8" r="4" fill="#10b981"/>
-      <text x="20" y="8" fill="white" font-size="11">BTC > $45,000</text>
-      <text x="20" y="20" fill="#9ca3af" font-size="9">Ativo</text>
-      
-      <circle cx="8" cy="35" r="4" fill="#ef4444"/>
-      <text x="20" y="35" fill="white" font-size="11">ETH < $2,500</text>
-      <text x="20" y="47" fill="#9ca3af" font-size="9">Ativo</text>
-      
-      <circle cx="8" cy="62" r="4" fill="#f59e0b"/>
-      <text x="20" y="62" fill="white" font-size="11">ADA > $0.50</text>
-      <text x="20" y="74" fill="#9ca3af" font-size="9">Pausado</text>
-    </g>
-  </g>
+  <rect x="320" y="85" width="60" height="50" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="325" y="100" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Portfolio</text>
+  <text x="325" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f59e0b">$12.5K</text>
+  <text x="325" y="125" font-family="Arial, sans-serif" font-size="8" fill="#10b981">+8.2%</text>
   
-  <!-- Decorative Elements -->
-  <g opacity="0.1">
-    <circle cx="700" cy="100" r="50" fill="#60a5fa"/>
-    <circle cx="750" cy="150" r="30" fill="#a855f7"/>
-    <circle cx="680" cy="180" r="20" fill="#10b981"/>
-  </g>
+  <!-- Chart Area -->
+  <rect x="20" y="150" width="250" height="100" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="25" y="165" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Price Chart</text>
   
-  <!-- Bottom Status Bar -->
-  <rect x="0" y="560" width="800" height="40" fill="#111827" fill-opacity="0.8"/>
-  <text x="40" y="580" fill="#9ca3af" font-size="12">Última atualização: 14:32:15</text>
-  <text x="600" y="580" fill="#10b981" font-size="12">● Conectado - Dados em tempo real</text>
+  <!-- Chart Lines -->
+  <polyline points="30,220 50,200 70,210 90,180 110,190 130,170 150,160 170,175 190,155 210,165 230,145 250,150" 
+            stroke="#10b981" stroke-width="2" fill="none"/>
+  <polyline points="30,230 50,225 70,235 90,220 110,225 130,215 150,210 170,220 190,205 210,210 230,195 250,200" 
+            stroke="#f59e0b" stroke-width="2" fill="none"/>
+  
+  <!-- Chart Grid -->
+  <line x1="30" y1="170" x2="30" y2="240" stroke="#374151" stroke-width="1"/>
+  <line x1="30" y1="240" x2="260" y2="240" stroke="#374151" stroke-width="1"/>
+  
+  <!-- Watchlist -->
+  <rect x="280" y="150" width="100" height="100" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="285" y="165" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Watchlist</text>
+  
+  <!-- Watchlist Items -->
+  <rect x="285" y="175" width="90" height="15" rx="3" fill="#374151"/>
+  <text x="290" y="185" font-family="Arial, sans-serif" font-size="8" fill="white">BTC/USD</text>
+  <text x="350" y="185" font-family="Arial, sans-serif" font-size="8" fill="#10b981">+2.5%</text>
+  
+  <rect x="285" y="195" width="90" height="15" rx="3" fill="#374151"/>
+  <text x="290" y="205" font-family="Arial, sans-serif" font-size="8" fill="white">ETH/USD</text>
+  <text x="350" y="205" font-family="Arial, sans-serif" font-size="8" fill="#ef4444">-1.2%</text>
+  
+  <rect x="285" y="215" width="90" height="15" rx="3" fill="#374151"/>
+  <text x="290" y="225" font-family="Arial, sans-serif" font-size="8" fill="white">ADA/USD</text>
+  <text x="350" y="225" font-family="Arial, sans-serif" font-size="8" fill="#10b981">+5.8%</text>
+  
+  <!-- Bottom Stats -->
+  <rect x="20" y="265" width="360" height="25" rx="4" fill="#1e293b" stroke="#334155"/>
+  <text x="25" y="278" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Market Cap: $1.2T</text>
+  <text x="120" y="278" font-family="Arial, sans-serif" font-size="8" fill="#64748b">24h Volume: $45B</text>
+  <text x="240" y="278" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Active Coins: 2,156</text>
+  
+  <!-- Crypto Icons -->
+  <circle cx="75" cy="110" r="8" fill="#f7931a"/>
+  <text x="71" y="114" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">₿</text>
+  
+  <circle cx="175" cy="110" r="8" fill="#627eea"/>
+  <text x="171" y="114" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">Ξ</text>
+  
+  <circle cx="275" cy="110" r="8" fill="#0033ad"/>
+  <text x="271" y="114" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">₳</text>
 </svg>

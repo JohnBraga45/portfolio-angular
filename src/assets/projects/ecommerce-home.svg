@@ -1,0 +1,91 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#ffffff"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="50" fill="#1f2937"/>
+  <text x="20" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">ShopNow</text>
+  <text x="20" y="35" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">Your favorite online store</text>
+  
+  <!-- Navigation Menu -->
+  <text x="120" y="25" font-family="Arial, sans-serif" font-size="9" fill="white">Home</text>
+  <text x="160" y="25" font-family="Arial, sans-serif" font-size="9" fill="#9ca3af">Products</text>
+  <text x="210" y="25" font-family="Arial, sans-serif" font-size="9" fill="#9ca3af">Categories</text>
+  <text x="270" y="25" font-family="Arial, sans-serif" font-size="9" fill="#9ca3af">About</text>
+  <text x="310" y="25" font-family="Arial, sans-serif" font-size="9" fill="#9ca3af">Contact</text>
+  
+  <!-- User Account -->
+  <rect x="350" y="15" width="30" height="20" rx="10" fill="#3b82f6"/>
+  <text x="365" y="27" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">👤</text>
+  
+  <!-- Hero Section -->
+  <rect x="0" y="50" width="400" height="120" fill="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"/>
+  <rect x="0" y="50" width="400" height="120" fill="url(#heroGradient)"/>
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hero Content -->
+  <text x="50" y="90" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Summer Collection 2024</text>
+  <text x="50" y="110" font-family="Arial, sans-serif" font-size="10" fill="white">Discover the latest trends with up to 60% off</text>
+  <rect x="50" y="120" width="80" height="25" rx="12" fill="#f59e0b"/>
+  <text x="90" y="135" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">Shop Now</text>
+  
+  <!-- Hero Image Placeholder -->
+  <rect x="280" y="70" width="100" height="80" rx="8" fill="white" fill-opacity="0.2"/>
+  <text x="330" y="115" font-family="Arial, sans-serif" font-size="30" text-anchor="middle">👗</text>
+  
+  <!-- Categories Section -->
+  <text x="20" y="190" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">Shop by Category</text>
+  
+  <!-- Category Cards -->
+  <!-- Electronics -->
+  <rect x="20" y="200" width="80" height="60" rx="8" fill="#f3f4f6" stroke="#e5e7eb"/>
+  <text x="60" y="220" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📱</text>
+  <text x="60" y="235" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937" text-anchor="middle">Electronics</text>
+  <text x="60" y="245" font-family="Arial, sans-serif" font-size="7" fill="#6b7280" text-anchor="middle">120+ items</text>
+  
+  <!-- Fashion -->
+  <rect x="110" y="200" width="80" height="60" rx="8" fill="#f3f4f6" stroke="#e5e7eb"/>
+  <text x="150" y="220" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">👕</text>
+  <text x="150" y="235" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937" text-anchor="middle">Fashion</text>
+  <text x="150" y="245" font-family="Arial, sans-serif" font-size="7" fill="#6b7280" text-anchor="middle">250+ items</text>
+  
+  <!-- Home & Garden -->
+  <rect x="200" y="200" width="80" height="60" rx="8" fill="#f3f4f6" stroke="#e5e7eb"/>
+  <text x="240" y="220" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">🏠</text>
+  <text x="240" y="235" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937" text-anchor="middle">Home</text>
+  <text x="240" y="245" font-family="Arial, sans-serif" font-size="7" fill="#6b7280" text-anchor="middle">80+ items</text>
+  
+  <!-- Sports -->
+  <rect x="290" y="200" width="80" height="60" rx="8" fill="#f3f4f6" stroke="#e5e7eb"/>
+  <text x="330" y="220" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">⚽</text>
+  <text x="330" y="235" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937" text-anchor="middle">Sports</text>
+  <text x="330" y="245" font-family="Arial, sans-serif" font-size="7" fill="#6b7280" text-anchor="middle">95+ items</text>
+  
+  <!-- Featured Deals Banner -->
+  <rect x="20" y="270" width="360" height="25" rx="6" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="30" y="285" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#92400e">🔥 Flash Sale: Extra 20% off on all items | Use code: FLASH20</text>
+  <text x="350" y="285" font-family="Arial, sans-serif" font-size="8" fill="#92400e">Ends in 2h</text>
+  
+  <!-- Search Bar -->
+  <rect x="20" y="15" width="200" height="20" rx="10" fill="white" stroke="#d1d5db"/>
+  <text x="30" y="27" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">🔍 Search for products...</text>
+  
+  <!-- Cart Icon with Badge -->
+  <circle cx="380" cy="35" r="8" fill="#f59e0b"/>
+  <text x="380" y="39" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">🛒</text>
+  <circle cx="385" cy="30" r="4" fill="#ef4444"/>
+  <text x="385" y="33" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">3</text>
+  
+  <!-- Trending Badge -->
+  <rect x="25" y="205" width="25" height="12" rx="6" fill="#ef4444"/>
+  <text x="37" y="213" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">HOT</text>
+  
+  <!-- New Badge -->
+  <rect x="115" y="205" width="25" height="12" rx="6" fill="#10b981"/>
+  <text x="127" y="213" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">NEW</text>
+</svg>
