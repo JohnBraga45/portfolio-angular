@@ -3,10 +3,10 @@
     <!-- Section Header -->
     <div class="text-center mb-16">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Minhas Skills
+        {{ 'skills.title' | translate }}
       </h2>
       <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Aqui estão as tecnologias e ferramentas que domino, organizadas por categoria e nível de proficiência.
+        {{ 'skills.subtitle' | translate }}
       </p>
     </div>
 
@@ -71,32 +71,32 @@
     <div *ngIf="!isLoading && skills.length > 0" class="mt-16 text-center">
       <div class="bg-gray-50 rounded-lg p-8">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">
-          Resumo das Habilidades
+          {{ 'skills.summary' | translate }}
         </h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div class="text-center">
             <div class="text-3xl font-bold text-primary-600 mb-2">
               {{ skills.length }}
             </div>
-            <div class="text-gray-600">Total de Skills</div>
+            <div class="text-gray-600">{{ 'skills.total' | translate }}</div>
           </div>
           <div class="text-center">
             <div class="text-3xl font-bold text-green-600 mb-2">
               {{ getAdvancedSkillsCount() }}
             </div>
-            <div class="text-gray-600">Avançado</div>
+            <div class="text-gray-600">{{ 'skills.advanced' | translate }}</div>
           </div>
           <div class="text-center">
             <div class="text-3xl font-bold text-blue-600 mb-2">
               {{ getProficientSkillsCount() }}
             </div>
-            <div class="text-gray-600">Proficiente</div>
+            <div class="text-gray-600">{{ 'skills.proficient' | translate }}</div>
           </div>
           <div class="text-center">
             <div class="text-3xl font-bold text-purple-600 mb-2">
               {{ getCategoriesCount() }}
             </div>
-            <div class="text-gray-600">Categorias</div>
+            <div class="text-gray-600">{{ 'skills.categories' | translate }}</div>
           </div>
         </div>
       </div>

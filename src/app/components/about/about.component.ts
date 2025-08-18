@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DataService, Bio } from '../../services/data.service';
+import { DataAdapterService } from '../../services/data-adapter.service';
+import { Bio } from '../../services/data.service';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
@@ -13,14 +15,14 @@ export class AboutComponent implements OnInit {
   bio: Bio | null = null;
   isLoading = true;
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataAdapter: DataAdapterService) {}
 
   ngOnInit() {
     this.loadBio();
   }
 
   private loadBio() {
-    this.dataService.getBio().subscribe({
+    this.dataAdapter.getBio().subscribe({
       next: (bio) => {
         this.bio = bio;
         this.isLoading = false;
@@ -41,6 +43,7 @@ export class AboutComponent implements OnInit {
       return image;
     }
     
-    return this.dataService.getImageUrl(image);
+    // For Sanity images, the URL is already processed by DataAdapter
+    return image;
   }
 }

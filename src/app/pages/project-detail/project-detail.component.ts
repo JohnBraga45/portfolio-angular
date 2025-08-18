@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { DataService, Project } from '../../services/data.service';
+import { DataAdapterService } from '../../services/data-adapter.service';
+import { Project } from '../../services/data.service';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -20,7 +21,7 @@ export class ProjectDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private dataService: DataService
+    private dataAdapter: DataAdapterService
   ) {}
 
   ngOnInit(): void {
@@ -36,7 +37,7 @@ export class ProjectDetailComponent implements OnInit {
     this.isLoading = true;
     this.notFound = false;
 
-    this.dataService.getProjectBySlug(slug).subscribe({
+    this.dataAdapter.getProjectById(slug).subscribe({
       next: (project) => {
         this.project = project;
         if (!this.project) {
@@ -56,7 +57,7 @@ export class ProjectDetailComponent implements OnInit {
   }
 
   private loadRelatedProjects(): void {
-    this.dataService.getProjects()
+    this.dataAdapter.getProjects()
       .pipe(
         map((projects: Project[]) => projects
           .filter((p: Project) => p._id !== this.project?._id)
@@ -69,7 +70,8 @@ export class ProjectDetailComponent implements OnInit {
   }
 
   getImageUrl(imageRef: string): string {
-    return this.dataService.getImageUrl(imageRef);
+    // For Sanity images, the URL is already processed by DataAdapter
+    return imageRef;
   }
 
   goBack(): void {

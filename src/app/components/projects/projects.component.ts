@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
-import { DataService, Project } from '../../services/data.service';
+import { DataAdapterService } from '../../services/data-adapter.service';
+import { Project } from '../../services/data.service';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslatePipe],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -16,7 +18,7 @@ export class ProjectsComponent implements OnInit {
   isLoading = true;
   showAll = false;
 
-  constructor(private dataService: DataService, private router: Router) {}
+  constructor(private dataAdapter: DataAdapterService, private router: Router) {}
 
   ngOnInit() {
     this.loadProjects();
@@ -24,7 +26,7 @@ export class ProjectsComponent implements OnInit {
 
   private loadProjects() {
     // Load featured projects first
-    this.dataService.getFeaturedProjects().subscribe({
+    this.dataAdapter.getFeaturedProjects().subscribe({
       next: (projects) => {
         this.featuredProjects = projects;
         this.isLoading = false;
@@ -36,7 +38,7 @@ export class ProjectsComponent implements OnInit {
     });
 
     // Load all projects
-    this.dataService.getProjects().subscribe({
+    this.dataAdapter.getProjects().subscribe({
       next: (projects) => {
         this.projects = projects;
       },
@@ -90,7 +92,8 @@ export class ProjectsComponent implements OnInit {
       return image;
     }
     
-    return this.dataService.getImageUrl(image);
+    // For Sanity images, the URL is already processed by DataAdapter
+    return image;
   }
 
   getDisplayedProjects(): Project[] {

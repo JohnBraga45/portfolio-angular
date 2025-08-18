@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DataService, Skill } from '../../services/data.service';
+import { DataAdapterService } from '../../services/data-adapter.service';
+import { Skill } from '../../services/data.service';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -14,14 +16,14 @@ export class SkillsComponent implements OnInit {
   skillCategories: { [key: string]: Skill[] } = {};
   isLoading = true;
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataAdapter: DataAdapterService) {}
 
   ngOnInit() {
     this.loadSkills();
   }
 
   private loadSkills() {
-    this.dataService.getSkills().subscribe({
+    this.dataAdapter.getSkills().subscribe({
       next: (skills) => {
         this.skills = skills;
         this.organizeSkillsByCategory();

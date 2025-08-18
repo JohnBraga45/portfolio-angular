@@ -22,7 +22,7 @@
                   [class.hover:text-primary-600]="isScrolled"
                   [class.text-gray-300]="!isScrolled"
                   [class.hover:text-white]="!isScrolled">
-            Início
+            {{ 'nav.home' | translate }}
           </button>
           <button (click)="scrollToSection('about')"
                   class="nav-link transition-colors duration-200"
@@ -30,7 +30,7 @@
                   [class.hover:text-primary-600]="isScrolled"
                   [class.text-gray-300]="!isScrolled"
                   [class.hover:text-white]="!isScrolled">
-            Sobre
+            {{ 'nav.about' | translate }}
           </button>
           <button (click)="scrollToSection('projects')"
                   class="nav-link transition-colors duration-200"
@@ -38,7 +38,7 @@
                   [class.hover:text-primary-600]="isScrolled"
                   [class.text-gray-300]="!isScrolled"
                   [class.hover:text-white]="!isScrolled">
-            Projetos
+            {{ 'nav.projects' | translate }}
           </button>
           <button (click)="scrollToSection('skills')"
                   class="nav-link transition-colors duration-200"
@@ -46,16 +46,22 @@
                   [class.hover:text-primary-600]="isScrolled"
                   [class.text-gray-300]="!isScrolled"
                   [class.hover:text-white]="!isScrolled">
-            Skills
+            {{ 'skills.title' | translate }}
           </button>
+
           <button (click)="scrollToSection('contact')"
                   class="nav-link transition-colors duration-200"
                   [class.text-gray-700]="isScrolled"
                   [class.hover:text-primary-600]="isScrolled"
                   [class.text-gray-300]="!isScrolled"
                   [class.hover:text-white]="!isScrolled">
-            Contato
+            {{ 'nav.contact' | translate }}
           </button>
+          
+          <!-- Language Selector -->
+          <div class="ml-4">
+            <app-language-selector></app-language-selector>
+          </div>
         </div>
       </div>
 
@@ -80,24 +86,29 @@
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg rounded-lg mt-2">
         <button (click)="scrollToSection('home')"
                 class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
-          Início
+          {{ 'nav.home' | translate }}
         </button>
         <button (click)="scrollToSection('about')"
                 class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
-          Sobre
+          {{ 'nav.about' | translate }}
         </button>
         <button (click)="scrollToSection('projects')"
                 class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
-          Projetos
+          {{ 'nav.projects' | translate }}
         </button>
         <button (click)="scrollToSection('skills')"
                 class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
-          Skills
+          {{ 'skills.title' | translate }}
         </button>
         <button (click)="scrollToSection('contact')"
                 class="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-200">
-          Contato
+          {{ 'nav.contact' | translate }}
         </button>
+        
+        <!-- Language Selector Mobile -->
+        <div class="px-3 py-2 border-t border-gray-200">
+          <app-language-selector></app-language-selector>
+        </div>
       </div>
     </div>
   </nav>

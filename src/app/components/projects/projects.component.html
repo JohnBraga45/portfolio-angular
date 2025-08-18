@@ -3,10 +3,10 @@
     <!-- Section Header -->
     <div class="text-center mb-16">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Meus Projetos
+        {{ 'projects.title' | translate }}
       </h2>
       <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Aqui estão alguns dos projetos que desenvolvi, demonstrando minhas habilidades e experiência em diferentes tecnologias.
+        {{ 'projects.subtitle' | translate }}
       </p>
     </div>
 
@@ -48,7 +48,7 @@
           <!-- Featured Badge -->
           <div *ngIf="project.featured" 
                class="absolute top-4 left-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-            Destaque
+            {{ 'projects.featured' | translate }}
           </div>
         </div>
 
@@ -79,7 +79,7 @@
               <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
               </svg>
-              Ver Projeto
+              {{ 'projects.viewProject' | translate }}
             </a>
             
             <a *ngIf="project.githubUrl" 
@@ -97,7 +97,7 @@
               <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
-              Detalhes
+              {{ 'projects.details' | translate }}
             </a>
           </div>
         </div>
@@ -108,7 +108,7 @@
     <div *ngIf="!isLoading && projects.length > 6" class="text-center mt-12">
       <button (click)="toggleShowAll()" 
               class="btn-primary">
-        {{ showAll ? 'Ver Menos' : 'Ver Todos os Projetos' }}
+        {{ showAll ? ('projects.showLess' | translate) : ('projects.showAll' | translate) }}
       </button>
     </div>
 
@@ -118,8 +118,8 @@
       <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
       </svg>
-      <h3 class="text-lg font-medium text-gray-900 mb-2">Nenhum projeto encontrado</h3>
-      <p class="text-gray-600">Os projetos serão exibidos aqui quando estiverem disponíveis.</p>
+      <h3 class="text-lg font-medium text-gray-900 mb-2">{{ 'projects.noProjects' | translate }}</h3>
+      <p class="text-gray-600">{{ 'projects.noProjectsDesc' | translate }}</p>
     </div>
   </div>
 </section>

@@ -1,0 +1,133 @@
+<div class="min-h-screen bg-gray-50 py-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">Painel de Administração</h1>
+      <p class="text-gray-600">Gerencie seu portfólio e configure o Sanity CMS</p>
+    </div>
+
+    <!-- Status do CMS -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Status do CMS</h2>
+      <div class="flex items-center space-x-3">
+        <div [class]="sanityStatus.isActive ? 'w-3 h-3 bg-green-500 rounded-full' : 'w-3 h-3 bg-yellow-500 rounded-full'"></div>
+        <span [class]="sanityStatus.isActive ? 'text-green-700 font-medium' : 'text-yellow-700 font-medium'">
+          {{ sanityStatus.message }}
+        </span>
+      </div>
+      
+      <div class="mt-4">
+        <button 
+          (click)="toggleDataSource()" 
+          class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors duration-200">
+          {{ sanityStatus.isActive ? 'Usar Dados Locais' : 'Tentar Usar Sanity' }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Estatísticas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-white rounded-lg shadow-sm p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Projetos</h3>
+        <p class="text-3xl font-bold text-blue-600">{{ stats.totalProjects }}</p>
+        <p class="text-sm text-gray-500 mt-1">Total de projetos</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-sm p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Destacados</h3>
+        <p class="text-3xl font-bold text-green-600">{{ stats.featuredProjects }}</p>
+        <p class="text-sm text-gray-500 mt-1">Projetos em destaque</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-sm p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Habilidades</h3>
+        <p class="text-3xl font-bold text-purple-600">{{ stats.totalSkills }}</p>
+        <p class="text-sm text-gray-500 mt-1">Tecnologias</p>
+      </div>
+    </div>
+
+    <!-- Links Úteis -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Links Úteis</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a 
+          href="http://localhost:3333" 
+          target="_blank" 
+          class="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+          <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M7 7l10 10M17 7l-10 10"></path>
+          </svg>
+          <div>
+            <h3 class="font-medium text-gray-900">Abrir Sanity Studio</h3>
+            <p class="text-sm text-gray-500">Gerenciar conteúdo no CMS</p>
+          </div>
+        </a>
+        
+        <button 
+          (click)="refreshData()" 
+          class="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200 text-left">
+          <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+          </svg>
+          <div>
+            <h3 class="font-medium text-gray-900">Atualizar Dados</h3>
+            <p class="text-sm text-gray-500">Recarregar estatísticas</p>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Upload de Imagem (apenas com Sanity) -->
+    <div *ngIf="sanityStatus.isActive" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Upload de Imagem</h2>
+      <div class="border-2 border-dashed border-gray-300 rounded-lg p-6">
+        <input 
+          type="file" 
+          (change)="onFileSelected($event)" 
+          accept="image/*" 
+          class="hidden" 
+          #fileInput>
+        <div class="text-center">
+          <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <div class="mt-4">
+            <button 
+              (click)="fileInput.click()" 
+              class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors duration-200">
+              Selecionar Imagem
+            </button>
+            <p class="mt-2 text-sm text-gray-500">PNG, JPG, GIF até 10MB</p>
+          </div>
+        </div>
+      </div>
+      
+      <div *ngIf="uploadStatus" class="mt-4 p-4 rounded-md" [class]="uploadStatus.type === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'">
+        {{ uploadStatus.message }}
+      </div>
+    </div>
+
+    <!-- Instruções de Configuração -->
+    <div class="bg-white rounded-lg shadow-sm p-6">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Configuração do Sanity CMS</h2>
+      
+      <div class="prose max-w-none">
+        <h3 class="text-lg font-medium text-gray-900 mb-3">Passos para configurar:</h3>
+        
+        <ol class="list-decimal list-inside space-y-2 text-gray-700">
+          <li>Crie uma conta no <a href="https://sanity.io" target="_blank" class="text-blue-600 hover:underline">Sanity.io</a></li>
+          <li>Crie um novo projeto no dashboard do Sanity</li>
+          <li>Copie o Project ID e Dataset do seu projeto</li>
+          <li>Atualize o arquivo <code class="bg-gray-100 px-2 py-1 rounded">src/app/services/sanity.service.ts</code> com suas credenciais</li>
+          <li>Execute <code class="bg-gray-100 px-2 py-1 rounded">npm run sanity:start</code> para iniciar o Studio</li>
+          <li>Configure os tokens de API para operações de escrita (opcional)</li>
+        </ol>
+        
+        <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+          <h4 class="font-medium text-blue-900 mb-2">📖 Documentação Completa</h4>
+          <p class="text-blue-700">Consulte o arquivo <code>SANITY-CMS-SETUP.md</code> na raiz do projeto para instruções detalhadas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

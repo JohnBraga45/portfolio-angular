@@ -72,7 +72,7 @@ export class DataService {
         _id: 'landing-page-bg-parts-2025',
         title: 'Landing Page - BG Parts',
         slug: { current: 'landing-page-bg-parts' },
-        description: 'Landing page profissional para BG Parts - empresa especializada na importação de peças automóveis usadas originais para Angola.',
+        description: 'Landing page profissional para BG Parts - empresa especializada na importação de peças automóveis usadas originais para Angola. Deploy disponível via Vercel.',
         content: `
           <h2>Sobre o Projeto</h2>
           <p>Landing page moderna e responsiva desenvolvida para a BG Parts, empresa especializada na importação de peças automóveis usadas originais para Angola.</p>
@@ -86,6 +86,18 @@ export class DataService {
             <li>🎨 Interface moderna e profissional</li>
           </ul>
           
+          <h3>Deploy na Vercel</h3>
+          <p><strong>Para fazer o deploy desta landing page na Vercel:</strong></p>
+          <ol>
+            <li>📁 Certifique-se que o arquivo index.html está na raiz do repositório</li>
+            <li>🔗 Acesse <a href="https://vercel.com" target="_blank">vercel.com</a> e faça login com GitHub</li>
+            <li>➕ Clique em "Add New" → "Project"</li>
+            <li>📂 Selecione o repositório GitHub da landing page</li>
+            <li>⚙️ Configure o projeto (Vercel detecta automaticamente HTML/CSS/JS)</li>
+            <li>🚀 Clique em "Deploy" - o site ficará disponível em poucos segundos!</li>
+          </ol>
+          <p>💡 <strong>Dica:</strong> A Vercel faz deploy automático a cada push no GitHub!</p>
+          
           <h3>Tecnologias Utilizadas</h3>
           <p>Desenvolvida com HTML5, CSS3, JavaScript vanilla e integração EmailJS para formulário de contato funcional.</p>
         `,
@@ -96,7 +108,7 @@ export class DataService {
          },
         gallery: [],
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'EmailJS', 'Responsive Design'],
-        liveUrl: 'https://johnbraga45.github.io/landingPage_BGparts/',
+        liveUrl: 'https://landing-page-b-gparts.vercel.app/',
         githubUrl: 'https://github.com/JohnBraga45/landingPage_BGparts',
         featured: true,
         category: 'web'
@@ -125,8 +137,37 @@ export class DataService {
          title: 'Sistema PNA - Interface Administrativa',
          slug: { current: 'sistema-pna-interface' },
          description: 'Interface administrativa desenvolvida para a Polícia Nacional de Angola usando Angular',
-         content: 'Sistema completo de gestão administrativa desenvolvido para o Departamento de Telecom & IT da PNA (Abr 2022 – Dez 2024). Desenvolvimento e manutenção de interfaces dinâmicas e responsivas usando Angular, HTML e CSS. Melhoria da usabilidade e acessibilidade dos sistemas com práticas modernas de front-end. Colaboração próxima com equipes backend para otimização de integrações via API e performance geral.',
-         image: null,
+         content: `
+          <h2>Sobre o Projeto</h2>
+          <p>Sistema completo de gestão administrativa desenvolvido para o Departamento de Telecom & IT da PNA (Abr 2022 – Dez 2024).</p>
+          
+          <h3>🖥️ Interface Administrativa</h3>
+          <p>O sistema apresenta uma interface moderna e intuitiva com:</p>
+          <ul>
+            <li>📊 Dashboard com métricas em tempo real</li>
+            <li>👥 Gestão completa de usuários e permissões</li>
+            <li>📋 Sistema de relatórios personalizáveis</li>
+            <li>🔒 Controle de segurança e auditoria</li>
+            <li>⚙️ Configurações administrativas avançadas</li>
+          </ul>
+          
+          <h3>🎨 Design e Usabilidade</h3>
+          <p>Interface desenvolvida com foco na experiência do usuário:</p>
+          <ul>
+            <li>🎯 Design responsivo para diferentes dispositivos</li>
+            <li>🔍 Sistema de busca e filtros avançados</li>
+            <li>📈 Visualização de dados com gráficos e estatísticas</li>
+            <li>🚀 Performance otimizada para grandes volumes de dados</li>
+          </ul>
+          
+          <h3>💼 Impacto Organizacional</h3>
+          <p>O sistema revolucionou a gestão administrativa da PNA, proporcionando maior eficiência e controle nos processos internos.</p>
+        `,
+         image: {
+           asset: {
+             url: '/assets/projects/sistema-pna-screenshot.svg'
+           }
+         },
          gallery: [],
          technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'REST APIs', 'Responsive Design'],
          liveUrl: undefined,
@@ -139,8 +180,37 @@ export class DataService {
          title: 'ConnectSolution - Plataforma Web',
          slug: { current: 'connectsolution-platform' },
          description: 'Soluções web e mobile com design responsivo e alta performance (Freelance)',
-         content: 'Projeto freelance desenvolvido entre Jun 2020 – Dez 2020. Desenvolvimento de soluções web e mobile focadas em design responsivo e performance de UI. Integração de recursos com React Native para experiências mobile aprimoradas. Suporte técnico e resolução de problemas para clientes empresariais.',
-         image: null,
+         content: `
+          <h2>Sobre o Projeto</h2>
+          <p>Plataforma completa de soluções digitais desenvolvida como projeto freelance (Jun 2020 – Dez 2020).</p>
+          
+          <h3>🌐 Soluções Web & Mobile</h3>
+          <p>A ConnectSolution oferece uma experiência integrada:</p>
+          <ul>
+            <li>🚀 Landing page moderna com design responsivo</li>
+            <li>📱 Aplicações mobile nativas com React Native</li>
+            <li>⚡ Performance otimizada em todas as plataformas</li>
+            <li>🎨 Interface intuitiva e experiência excepcional</li>
+            <li>📊 Dashboard com métricas de performance</li>
+          </ul>
+          
+          <h3>🔧 Funcionalidades Principais</h3>
+          <ul>
+            <li>💼 Portfolio interativo de projetos</li>
+            <li>📈 Estatísticas de satisfação do cliente (98%)</li>
+            <li>🛠️ Suporte técnico 24/7</li>
+            <li>📋 Sistema de gestão de projetos</li>
+            <li>🎯 Foco em resultados mensuráveis</li>
+          </ul>
+          
+          <h3>🏆 Resultados Alcançados</h3>
+          <p>Mais de 50 projetos entregues com alta satisfação do cliente e suporte contínuo para empresas de diversos segmentos.</p>
+        `,
+         image: {
+           asset: {
+             url: '/assets/projects/connectsolution-screenshot.svg'
+           }
+         },
          gallery: [],
          technologies: ['React Native', 'JavaScript', 'CSS3', 'Responsive Design', 'Mobile Development'],
          liveUrl: undefined,
@@ -153,8 +223,37 @@ export class DataService {
          title: 'FieldBright - Interface Next.js',
          slug: { current: 'fieldbright-interface' },
          description: 'Interface moderna desenvolvida com Next.js focada em performance e SEO (Remoto - Brasil)',
-         content: 'Projeto desenvolvido remotamente para empresa brasileira (Jan 2021 – Dez 2021). Desenvolvimento de interfaces com Next.js e React.js, com foco em performance e SEO. Criação de componentes reutilizáveis com HTML, CSS e styled-components. Implementação de best practices para otimização de carregamento e experiência do usuário.',
-         image: null,
+         content: `
+          <h2>Sobre o Projeto</h2>
+          <p>Interface moderna desenvolvida remotamente para empresa brasileira (Jan 2021 – Dez 2021) com foco em performance e SEO.</p>
+          
+          <h3>⚡ Performance Excepcional</h3>
+          <p>O projeto FieldBright foi otimizado para máxima performance:</p>
+          <ul>
+            <li>🎯 Score Lighthouse: 95/100 em Performance</li>
+            <li>🔍 Score SEO: 98/100 para melhor indexação</li>
+            <li>🚀 Carregamento ultra-rápido com SSR e SSG</li>
+            <li>📱 Design totalmente responsivo</li>
+            <li>♿ Acessibilidade otimizada (WCAG)</li>
+          </ul>
+          
+          <h3>🛠️ Tecnologias Avançadas</h3>
+          <ul>
+            <li>▲ Next.js com Server-Side Rendering</li>
+            <li>⚛️ React.js com componentes reutilizáveis</li>
+            <li>📘 TypeScript para código mais seguro</li>
+            <li>💅 Styled Components para CSS-in-JS</li>
+            <li>🔧 Webpack e otimizações de bundle</li>
+          </ul>
+          
+          <h3>📈 Resultados de SEO</h3>
+          <p>Interface otimizada para motores de busca com meta tags dinâmicas, sitemap automático e estrutura semântica perfeita.</p>
+        `,
+         image: {
+           asset: {
+             url: '/assets/projects/fieldbright-screenshot.svg'
+           }
+         },
          gallery: [],
          technologies: ['Next.js', 'React.js', 'TypeScript', 'Styled Components', 'SEO', 'Performance Optimization'],
          liveUrl: undefined,
@@ -192,8 +291,8 @@ export class DataService {
     const mockBio: Bio = {
       _id: 'bio1',
       name: 'Dionísio Braga',
-      title: 'Frontend Developer',
-      description: 'Frontend Developer com sólida experiência no desenvolvimento de interfaces web escaláveis e de alto desempenho utilizando HTML, CSS (incluindo animações) e JavaScript. Apaixonado por entregar experiências envolventes ao usuário e otimizar a performance do front-end. Histórico comprovado de colaboração em equipes multifuncionais para desenvolver aplicações responsivas centradas no usuário.',
+      title: 'Desenvolvedor Frontend | Angular & React |',
+      description: '🚀 Desenvolvedor Frontend apaixonado por criar experiências digitais excepcionais.\n\n💻 **Especialidades:**\n• Angular, TypeScript, JavaScript\n• HTML5, CSS3, SCSS, Tailwind CSS\n• Responsive Design & UX/UI\n• APIs REST e integração de dados\n\n🎯 **Diferenciais:**\n• Código limpo e otimizado\n• Soluções inovadoras e eficientes\n• Foco em performance e usabilidade\n\n📚 Atualmente cursando IA e Automação Digital, sempre em busca de novas tecnologias para entregar valor excepcional aos projetos.',
       image: '/assets/linkedin.jpg',
       resume: null,
       education: [
@@ -217,7 +316,7 @@ export class DataService {
         {
           title: 'Introdução a Cloud e DevOps',
           provider: 'Concluído',
-          year: 2024
+          year: 2025
         },
         {
           title: 'React and TypeScript',
@@ -266,8 +365,8 @@ export class DataService {
     // Dados reais do Dionísio Braga
     const mockContact: Contact = {
       _id: 'contact1',
-      email: 'dionisiobraga551&#64;gmail.com',
-      phone: '+351 920 797 741',
+      email: 'dionisiobraga551@gmail.com',
+      phone: '+351 920797741',
       location: 'Setúbal, Portugal',
       socialLinks: [
         { platform: 'LinkedIn', url: 'https://linkedin.com/in/dionísio-braga/' }

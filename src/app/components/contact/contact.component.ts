@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { DataService, Contact } from '../../services/data.service';
+import { DataAdapterService } from '../../services/data-adapter.service';
+import { Contact } from '../../services/data.service';
 import { EmailService, EmailData } from '../../services/email.service';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 interface ContactForm {
   name: string;
@@ -14,7 +16,7 @@ interface ContactForm {
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -33,7 +35,7 @@ export class ContactComponent implements OnInit {
   };
 
   constructor(
-    private dataService: DataService,
+    private dataAdapter: DataAdapterService,
     private emailService: EmailService
   ) {}
 
@@ -59,7 +61,7 @@ export class ContactComponent implements OnInit {
   }
 
   private loadContact() {
-    this.dataService.getContact().subscribe({
+    this.dataAdapter.getContact().subscribe({
       next: (contact) => {
         this.contact = contact;
         this.isLoading = false;
