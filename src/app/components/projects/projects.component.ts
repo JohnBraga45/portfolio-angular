@@ -92,6 +92,11 @@ export class ProjectsComponent implements OnInit {
       return image;
     }
     
+    // Extract URL from image object structure
+    if (image.asset && image.asset.url) {
+      return image.asset.url;
+    }
+    
     // For Sanity images, the URL is already processed by DataAdapter
     return image;
   }

@@ -36,7 +36,7 @@ export class AboutComponent implements OnInit {
 
   getImageUrl(image: any): string {
     if (!image) {
-      return '/assets/linkedin.jpg';
+      return 'assets/linkedin.jpg';
     }
     
     if (typeof image === 'string') {

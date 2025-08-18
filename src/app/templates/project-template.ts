@@ -91,13 +91,13 @@ export const EXAMPLE_PROJECT: Project = {
   `,
   image: {
     asset: {
-      url: '/assets/projects/ecommerce-angular.jpg'
+      url: 'assets/projects/ecommerce-angular.jpg'
     }
   },
   gallery: [
-    { asset: { url: '/assets/projects/ecommerce-home.jpg' } },
-    { asset: { url: '/assets/projects/ecommerce-product.jpg' } },
-    { asset: { url: '/assets/projects/ecommerce-cart.jpg' } }
+    { asset: { url: 'assets/projects/ecommerce-home.jpg' } },
+      { asset: { url: 'assets/projects/ecommerce-product.jpg' } },
+      { asset: { url: 'assets/projects/ecommerce-cart.jpg' } }
   ],
   technologies: [
     'Angular', 'TypeScript', 'Tailwind CSS', 'Node.js',

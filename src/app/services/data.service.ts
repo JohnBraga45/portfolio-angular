@@ -103,7 +103,7 @@ export class DataService {
         `,
         image: {
            asset: {
-             url: '/assets/projects/bg-parts-landing.svg'
+             url: 'assets/projects/bg-parts-landing.svg'
            }
          },
         gallery: [],
@@ -122,7 +122,7 @@ export class DataService {
         content: 'Dashboard moderno e intuitivo para acompanhar o mercado de criptomoedas. Oferece preços em tempo real via CoinGecko API, gráficos de tendências com Chart.js, gerenciamento de portfólio, alertas de preço personalizados e design responsivo. Arquitetura escalável com Angular 17, TypeScript e Tailwind CSS.',
         image: {
           asset: {
-            url: '/assets/projects/crypto-dashboard.svg'
+            url: 'assets/projects/crypto-dashboard.svg'
           }
         },
         gallery: [],
@@ -165,7 +165,7 @@ export class DataService {
         `,
          image: {
            asset: {
-             url: '/assets/projects/sistema-pna-screenshot.svg'
+             url: 'assets/projects/sistema-pna-screenshot.svg'
            }
          },
          gallery: [],
@@ -208,7 +208,7 @@ export class DataService {
         `,
          image: {
            asset: {
-             url: '/assets/projects/connectsolution-screenshot.svg'
+             url: 'assets/projects/connectsolution-screenshot.svg'
            }
          },
          gallery: [],
@@ -251,7 +251,7 @@ export class DataService {
         `,
          image: {
            asset: {
-             url: '/assets/projects/fieldbright-screenshot.svg'
+             url: 'assets/projects/fieldbright-screenshot.svg'
            }
          },
          gallery: [],
@@ -293,7 +293,7 @@ export class DataService {
       name: 'Dionísio Braga',
       title: 'Desenvolvedor Frontend | Angular & React |',
       description: '🚀 Desenvolvedor Frontend apaixonado por criar experiências digitais excepcionais.\n\n💻 **Especialidades:**\n• Angular, TypeScript, JavaScript\n• HTML5, CSS3, SCSS, Tailwind CSS\n• Responsive Design & UX/UI\n• APIs REST e integração de dados\n\n🎯 **Diferenciais:**\n• Código limpo e otimizado\n• Soluções inovadoras e eficientes\n• Foco em performance e usabilidade\n\n📚 Atualmente cursando IA e Automação Digital, sempre em busca de novas tecnologias para entregar valor excepcional aos projetos.',
-      image: '/assets/linkedin.jpg',
+      image: 'assets/linkedin.jpg',
       resume: null,
       education: [
         {
@@ -376,10 +376,10 @@ export class DataService {
   }
 
   getImageUrl(imageRef: any): string {
-    if (!imageRef) return '/assets/linkedin.jpg';
+    if (!imageRef) return 'assets/linkedin.jpg';
     if (typeof imageRef === 'string') return imageRef;
     // Return placeholder for any other type
-    return '/assets/linkedin.jpg';
+    return 'assets/linkedin.jpg';
   }
 
   getProjectBySlug(slug: string): Observable<Project | null> {

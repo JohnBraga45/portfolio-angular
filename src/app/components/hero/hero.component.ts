@@ -44,7 +44,7 @@ export class HeroComponent implements OnInit {
 
   getImageUrl(image: any): string {
     if (!image) {
-      return '/assets/linkedin.jpg';
+      return 'assets/linkedin.jpg';
     }
     
     // Check if it's already a string URL
