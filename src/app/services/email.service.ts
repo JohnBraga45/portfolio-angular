@@ -23,7 +23,7 @@ export class EmailService {
 
   async sendEmail(emailData: EmailData): Promise<boolean> {
     try {
-      console.log('📧 Enviando e-mail para dionisiobraga551&#64;gmail.com...');
+      console.log('📧 Enviando e-mail para dionisiobraga551@gmail.com...');
       
       // Preparar os dados do template
       const templateParams = {
@@ -31,7 +31,7 @@ export class EmailService {
         from_email: emailData.email,
         subject: emailData.subject || 'Mensagem do Portfolio',
         message: emailData.message,
-        to_email: 'dionisiobraga551&#64;gmail.com'
+        to_email: 'dionisiobraga551@gmail.com'
       };
 
       // Enviar e-mail usando EmailJS
@@ -41,7 +41,7 @@ export class EmailService {
         templateParams
       );
 
-      console.log('✅ E-mail enviado com sucesso para dionisiobraga551&#64;gmail.com!');
+      console.log('✅ E-mail enviado com sucesso para dionisiobraga551@gmail.com!');
       console.log('📋 Detalhes:', {
         status: response.status,
         text: response.text,
@@ -74,7 +74,7 @@ export class EmailService {
         },
         body: JSON.stringify({
           ...emailData,
-          to: 'dionisiobraga551&#64;gmail.com'
+          to: 'dionisiobraga551@gmail.com'
         })
       });
 

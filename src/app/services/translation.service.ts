@@ -45,14 +45,14 @@ export class TranslationService {
       
       // Bio Data
       'bio.name': 'Dionísio Braga',
-      'bio.title': 'Desenvolvedor Frontend | Angular & React |',
-      'bio.description': '🚀 Desenvolvedor Frontend apaixonado por criar experiências digitais excepcionais.\n\n💻 **Especialidades:**\n• Angular, TypeScript, JavaScript\n• HTML5, CSS3, SCSS, Tailwind CSS\n• Responsive Design & UX/UI\n• APIs REST e integração de dados\n\n🎯 **Diferenciais:**\n• Código limpo e bem documentado\n• Foco em performance e acessibilidade\n• Experiência com metodologias ágeis\n• Sempre atualizado com as últimas tecnologias',
+      'bio.title': 'Frontend Engineer | Angular & React | IA & Automação Digital | No-Code/Low-Code Enthusiast',
+      'bio.description': 'Olá 👋 Sou Frontend Developer apaixonado por tecnologia e inovação.\n\nTenho experiência em Angular, React.js e React Native, com foco em criar interfaces intuitivas, responsivas e de alto desempenho.\n\nAtualmente, estou cursando Inteligência Artificial e Automação Digital (Unifecaf + Rocketseat), ampliando minha atuação para integrar IA Generativa, Automação Digital e No-Code/Low-Code aos meus projetos.\n\nMeu portfólio reflete essa visão: soluções que unem frontend moderno com inteligência artificial para gerar valor real em produtos digitais.',
       'bio.downloadCV': 'Download CV',
       
       // Education
       'education.degree1': 'Graduação em Inteligência Artificial e Automação Digital (Em andamento)',
       'education.institution1': 'Unifecaf - Remoto no Brasil',
-      'education.period1': '2024 – Presente',
+      'education.period1': '2025 – Presente',
       'education.degree2': 'Bacharelado em Engenharia Informática (Incompleto)',
       'education.institution2': 'Universidade Deolinda Rodrigues',
       'education.period2': '2021 – 2024',
@@ -63,7 +63,7 @@ export class TranslationService {
       // Certifications
       'cert.title1': 'Introdução a Cloud e DevOps',
       'cert.provider1': 'Concluído',
-      'cert.year1': '2024',
+      'cert.year1': '2025',
       'cert.title2': 'React and TypeScript',
       'cert.provider2': 'Udemy',
       'cert.year2': '2022',
@@ -166,14 +166,14 @@ export class TranslationService {
       
       // Bio Data
       'bio.name': 'Dionísio Braga',
-      'bio.title': 'Frontend Developer | Angular & React |',
-      'bio.description': '🚀 Frontend Developer passionate about creating exceptional digital experiences.\n\n💻 **Specialties:**\n• Angular, TypeScript, JavaScript\n• HTML5, CSS3, SCSS, Tailwind CSS\n• Responsive Design & UX/UI\n• REST APIs and data integration\n\n🎯 **Differentials:**\n• Clean and well-documented code\n• Focus on performance and accessibility\n• Experience with agile methodologies\n• Always updated with the latest technologies',
+      'bio.title': 'Frontend Engineer | Angular & React | AI & Digital Automation | No-Code/Low-Code Enthusiast',
+      'bio.description': 'Hello 👋 I\'m a Frontend Developer passionate about technology and innovation.\n\nI have experience in Angular, React.js and React Native, focusing on creating intuitive, responsive and high-performance interfaces.\n\nCurrently, I\'m studying Artificial Intelligence and Digital Automation (Unifecaf + Rocketseat), expanding my expertise to integrate Generative AI, Digital Automation and No-Code/Low-Code into my projects.\n\nMy portfolio reflects this vision: solutions that combine modern frontend with artificial intelligence to generate real value in digital products.',
       'bio.downloadCV': 'Download CV',
       
       // Education
       'education.degree1': 'Bachelor\'s in Artificial Intelligence and Digital Automation (In progress)',
       'education.institution1': 'Unifecaf - Remote in Brazil',
-      'education.period1': '2024 – Present',
+      'education.period1': '2025 – Present',
       'education.degree2': 'Bachelor\'s in Computer Engineering (Incomplete)',
       'education.institution2': 'Deolinda Rodrigues University',
       'education.period2': '2021 – 2024',
@@ -184,7 +184,7 @@ export class TranslationService {
       // Certifications
       'cert.title1': 'Introduction to Cloud and DevOps',
       'cert.provider1': 'Completed',
-      'cert.year1': '2024',
+      'cert.year1': '2025',
       'cert.title2': 'React and TypeScript',
       'cert.provider2': 'Udemy',
       'cert.year2': '2022',

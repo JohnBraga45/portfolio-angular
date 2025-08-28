@@ -65,7 +65,7 @@ export class DataService {
 
   // Get all projects
   getProjects(): Observable<Project[]> {
-    // Projetos baseados na experiência do Dionísio Braga
+    // Projetos baseados na experiência do Denilson Jacinto
     const mockProjects: Project[] = [
       // 🆕 Landing Page BG Parts
       {
@@ -109,7 +109,7 @@ export class DataService {
         gallery: [],
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'EmailJS', 'Responsive Design'],
         liveUrl: 'https://landing-page-b-gparts.vercel.app/',
-        githubUrl: 'https://github.com/JohnBraga45/landingPage_BGparts',
+        githubUrl: 'https://github.com/DenilsonJacinto/landingPage_BGparts',
         featured: true,
         category: 'web'
       },
@@ -128,7 +128,7 @@ export class DataService {
         gallery: [],
         technologies: ['Angular', 'TypeScript', 'CoinGecko API', 'Chart.js', 'Tailwind CSS', 'RxJS'],
         liveUrl: 'https://crypto-dashboard-chi-six.vercel.app/',
-        githubUrl: 'https://github.com/JohnBraga45/crypto-dashboard',
+        githubUrl: 'https://github.com/DenilsonJacinto/crypto-dashboard',
         featured: true,
         category: 'web'
       },
@@ -287,12 +287,12 @@ export class DataService {
 
   // Get bio information
   getBio(): Observable<Bio> {
-    // Dados completos do Dionísio Braga
+    // Dados completos do Denilson Jacinto
     const mockBio: Bio = {
       _id: 'bio1',
       name: 'Dionísio Braga',
-      title: 'Desenvolvedor Frontend | Angular & React |',
-      description: '🚀 Desenvolvedor Frontend apaixonado por criar experiências digitais excepcionais.\n\n💻 **Especialidades:**\n• Angular, TypeScript, JavaScript\n• HTML5, CSS3, SCSS, Tailwind CSS\n• Responsive Design & UX/UI\n• APIs REST e integração de dados\n\n🎯 **Diferenciais:**\n• Código limpo e otimizado\n• Soluções inovadoras e eficientes\n• Foco em performance e usabilidade\n\n📚 Atualmente cursando IA e Automação Digital, sempre em busca de novas tecnologias para entregar valor excepcional aos projetos.',
+      title: 'Frontend Engineer | Angular & React | IA & Automação Digital | No-Code/Low-Code Enthusiast',
+      description: 'Olá 👋 Frontend Developer apaixonado por tecnologia e inovação.\n\nTenho experiência em Angular, React.js e React Native, com foco em criar interfaces intuitivas, responsivas e de alto desempenho.\n\nAtualmente, estou cursando Inteligência Artificial e Automação Digital (Unifecaf + Rocketseat), ampliando minha atuação para integrar IA Generativa, Automação Digital e No-Code/Low-Code aos meus projetos.\n\nMeu portfólio reflete essa visão: soluções que unem frontend moderno com inteligência artificial para gerar valor real em produtos digitais.',
       image: 'assets/linkedin.jpg',
       resume: null,
       education: [
@@ -341,7 +341,7 @@ export class DataService {
 
   // Get skills
   getSkills(): Observable<Skill[]> {
-    // Habilidades reais do Dionísio Braga
+    // Habilidades reais do Denilson Jacinto
     const mockSkills: Skill[] = [
       { _id: 's1', name: 'HTML5', category: 'Frontend', level: 95, icon: null },
       { _id: 's2', name: 'CSS3', category: 'Frontend', level: 95, icon: null },
@@ -362,14 +362,14 @@ export class DataService {
 
   // Get contact information
   getContact(): Observable<Contact> {
-    // Dados reais do Dionísio Braga
+    // Dados reais do Denilson Jacinto
     const mockContact: Contact = {
       _id: 'contact1',
       email: 'dionisiobraga551@gmail.com',
       phone: '+351 920797741',
       location: 'Setúbal, Portugal',
       socialLinks: [
-        { platform: 'LinkedIn', url: 'https://linkedin.com/in/dionísio-braga/' }
+        { platform: 'LinkedIn', url: 'https://linkedin.com/in/dionisio-braga/' }
       ]
     };
     return from([mockContact]);
